@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="/Downloads/plane.png">
+    <title>Airline Reservation System</title>
+</head>
+<body>
+    <header>
+        <h1 style="margin-left:500px;">Welcome to Airline Reservation</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="flight-search">
+            <h2>Find Your Flight</h2>
+            <form>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from">
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+        <section class="flight-list">
+            <h2>Available Flights</h2>
+            <table>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>Departure</th>
+                    <th>Destination</th>
+                    <th>Departure Time</th>
+                    <th>Price</th>
+                    <th>Book Now</th>
+                </tr>
+                <tr>
+                    <td>FL123</td>
+                    <td>Astana</td>
+                    <td>Almaty</td>
+                    <td>08:00 AM</td>
+                    <td>$250</td>
+                    <td><a href="#">Book</a></td>
+                </tr>
+                <tr>
+                    <td>AQ097</td>
+                    <td>Aqtau</td>
+                    <td>Baku</td>
+                    <td>12:00 AM</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>KZ777</td>
+                    <td>Almaty</td>
+                    <td>Dubai</td>
+                    <td>06:00 PM AM</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>AX435</td>
+                    <td>Aqtobe</td>
+                    <td>Astana</td>
+                    <td>10:00 AM</td>
+                    <td>$180</td>
+                </tr>
+                <!-- Add more flight listings here -->
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Airline Reservation System</p>
+    </footer>
+</body>
+</html>
